@@ -237,6 +237,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Velocity",
+                    "type": "Value",
+                    "id": "fc061f5f-ee41-4496-97dd-5c94b32ff7db",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Select Value",
                     "type": "Value",
                     "id": "e6005f29-e4c1-4f3b-8bf7-3a28bab5ca9c",
@@ -476,6 +485,17 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9079598f-26a0-40cf-85e1-7b6619f40ae8",
+                    "path": "<OculusTouchController>{LeftHand}/pointer/velocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -775,6 +795,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Velocity",
+                    "type": "Value",
+                    "id": "4f99fdf0-7f1d-4a4e-aafb-33ab2fe69187",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Select Value",
                     "type": "Value",
                     "id": "39bbf1ac-21a3-413d-90f6-6dbf6efeaabe",
@@ -1014,6 +1043,17 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fd61f148-026b-4ebc-bbe1-ec10208e7533",
+                    "path": "<OculusTouchController>{RightHand}/pointer/velocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
