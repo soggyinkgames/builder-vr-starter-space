@@ -27,9 +27,12 @@ public class Walker : MonoBehaviour
     void FixedUpdate()
     {
         _cooldownTimer += Time.fixedDeltaTime;
-        if (_cooldownTimer > minTimeBetweenStrokes
-            && leftControllerWalkReference.action.IsPressed()
-            && rightControllerWalkReference.action.IsPressed())
+        if (_cooldownTimer <= minTimeBetweenStrokes
+            || !leftControllerWalkReference.action.IsPressed()
+            || !rightControllerWalkReference.action.IsPressed())
+        {
+        }
+        else
         {
             var leftHandVelocity = leftControllerVelocity.action.ReadValue<Vector3>();
             var rightHandVelocity = rightControllerVelocity.action.ReadValue<Vector3>();
@@ -44,7 +47,7 @@ public class Walker : MonoBehaviour
             }
         }
 
-        if(_rigidbody.velocity.sqrMagnitude > 0.01f)
+        if (_rigidbody.velocity.sqrMagnitude > 0.01f)
         {
             _rigidbody.AddForce(-_rigidbody.velocity * dragForce, ForceMode.Acceleration);
         }
