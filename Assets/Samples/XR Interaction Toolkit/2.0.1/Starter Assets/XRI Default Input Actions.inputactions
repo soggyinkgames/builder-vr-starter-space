@@ -222,7 +222,7 @@
                 {
                     "name": "",
                     "id": "6fc0e152-885e-448b-8a86-f65237f18f16",
-                    "path": "<OculusTouchController>{LeftHand}/pointer/velocity",
+                    "path": "<OculusTouchController>{LeftHand}/devicePose/velocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -800,7 +800,7 @@
                 {
                     "name": "",
                     "id": "3e39b98f-d697-4585-ace4-6bc2141a0c04",
-                    "path": "<OculusTouchController>{RightHand}/pointer/velocity",
+                    "path": "<OculusTouchController>{RightHand}/devicePose/velocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
