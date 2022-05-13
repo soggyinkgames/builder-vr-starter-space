@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: b8f20d5ca50d16143afc11f5e4af6fc1, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e980bc7fbb00dc34b86b95ac842d1920, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.07229945, g: 0.050654814, b: 0.034133077, a: 1}
+  m_IndirectSpecularColor: {r: 0.06551648, g: 0.0902809, b: 0.23000458, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554189792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -552,10 +552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
+  m_System: {fileID: 863759307}
   m_TurnSpeed: 60
   m_LeftHandTurnAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Left Hand Turn
       m_Type: 0
@@ -1667,10 +1667,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1795137949}
   - component: {fileID: 1795137948}
-  - component: {fileID: 1795137950}
   - component: {fileID: 1795137951}
   - component: {fileID: 1795137952}
   - component: {fileID: 1795137953}
+  - component: {fileID: 1795137954}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1703,7 +1703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795137947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.22, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1712,27 +1712,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1795137950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795137947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0236910c5d139cc46b867140d2deb16b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkForce: 2
-  dragForce: 1
-  minForce: 1
-  minTimeBetweenStrokes: 0
-  leftControllerWalkReference: {fileID: -4391992491973684645, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  leftControllerVelocity: {fileID: -8784416103113700625, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rightControllerWalkReference: {fileID: -4499011976244835502, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rightControllerVelocity: {fileID: -5031206401058085264, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  trackingReference: {fileID: 1795137949}
 --- !u!54 &1795137951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1782,6 +1761,27 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 863759305}
   m_MinHeight: 1
   m_MaxHeight: 2
+--- !u!114 &1795137954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795137947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0236910c5d139cc46b867140d2deb16b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkForce: 3
+  dragForce: 6
+  minForce: 0
+  minTimeBetweenStrokes: 0
+  leftControllerWalkReference: {fileID: -4391992491973684645, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  leftControllerVelocity: {fileID: -8784416103113700625, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightControllerWalkReference: {fileID: -4499011976244835502, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightControllerVelocity: {fileID: -5031206401058085264, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  trackingReference: {fileID: 1795137949}
 --- !u!1001 &1903636474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1924,7 +1924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921164504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
