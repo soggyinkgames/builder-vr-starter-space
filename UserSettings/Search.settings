@@ -1,6 +1,6 @@
 trackSelection = true
 fetchPreview = true
-wantsMore = false
+defaultFlags = 0
 keepOpen = false
 queryFolder = "Assets"
 onBoardingDoNotAskAgain = true
@@ -10,6 +10,9 @@ scopes = {
 	"last_search.785D90A9" = "anti-"
 	"OpenInspectorPreview.785D90A9" = "0"
 	"currentGroup.785D90A9" = "all"
+	"last_search.8C24D059" = "grid"
+	"OpenInspectorPreview.8C24D059" = "0"
+	"currentGroup.8C24D059" = "all"
 }
 providers = {
 	adb = {
@@ -58,7 +61,11 @@ providers = {
 		defaultAction = null
 	}
 }
+objectSelectors = {
+}
 recentSearches = [
+	"g"
+	"grid snapping"
 	"a"
 	"s"
 ]
