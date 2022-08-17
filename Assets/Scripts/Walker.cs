@@ -4,16 +4,33 @@ using UnityEngine.InputSystem;
 public class Walker : MonoBehaviour
 {
     [Header("Values")]
-    [SerializeField] float walkForce = 2f;
-    [SerializeField] float dragForce = 2f;
-    [SerializeField] float minForce;
-    [SerializeField] float minTimeBetweenStrokes;
+    [SerializeField]
+    float walkForce = 2f;
+
+    [SerializeField]
+    float dragForce = 2f;
+
+    [SerializeField]
+    float minForce;
+
+    [SerializeField]
+    float minTimeBetweenStrokes;
+
     [Header("References")]
-    [SerializeField] InputActionReference leftControllerWalkReference;
-    [SerializeField] InputActionReference leftControllerVelocity;
-    [SerializeField] InputActionReference rightControllerWalkReference;
-    [SerializeField] InputActionReference rightControllerVelocity;
-    [SerializeField] Transform trackingReference;
+    [SerializeField]
+    InputActionReference leftControllerWalkReference;
+
+    [SerializeField]
+    InputActionReference leftControllerVelocity;
+
+    [SerializeField]
+    InputActionReference rightControllerWalkReference;
+
+    [SerializeField]
+    InputActionReference rightControllerVelocity;
+
+    [SerializeField]
+    Transform trackingReference;
 
     Rigidbody _rigidbody;
     float _cooldownTimer;
@@ -28,11 +45,12 @@ public class Walker : MonoBehaviour
     void FixedUpdate()
     {
         _cooldownTimer += Time.fixedDeltaTime;
-        if (_cooldownTimer > minTimeBetweenStrokes
+        if (
+            _cooldownTimer > minTimeBetweenStrokes
             && leftControllerWalkReference.action.IsPressed()
-            && rightControllerWalkReference.action.IsPressed())
-        
-         {
+            && rightControllerWalkReference.action.IsPressed()
+        )
+        {
             var leftHandVelocity = leftControllerVelocity.action.ReadValue<Vector3>();
             var rightHandVelocity = rightControllerVelocity.action.ReadValue<Vector3>();
             Vector3 localVelocity = leftHandVelocity + rightHandVelocity;
