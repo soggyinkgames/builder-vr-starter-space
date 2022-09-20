@@ -1,0 +1,66 @@
+# Blender MTL File: 'vasoMODEL.blend'
+# Material Count: 5
+
+newmtl Aluminium_sand
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.254545 0.254545 0.254545
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Aluminium_sand_BaseColor.png
+map_Ns Aluminium_sand_Roughness.png
+refl Aluminium_sand_Metallic.png
+
+newmtl Black_Iron
+Ns 323.999994
+Ka 0.490909 0.490909 0.490909
+Kd 0.800000 0.800000 0.800000
+Ks 0.409091 0.409091 0.409091
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump Metal029_2K_NormalDX.png
+map_Kd Metal029_2K_Color.png
+map_Ns Metal029_2K_Roughness.png
+
+newmtl Black_Iron.001
+Ns 323.999994
+Ka 0.490909 0.490909 0.490909
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump Metal029_2K_NormalDX.png
+map_Kd Metal029_2K_Color.png
+map_Ns Metal029_2K_Roughness.png
+
+newmtl Leaf_Material
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump -bm 0.800000 Plant_NORMAL.png
+map_Kd Plant2.png
+map_Ns Plant_ROUGHNESS.png
+
+newmtl dirt
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.072727 0.072727 0.072727
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd TexturesCom_Ground_TreeRootsPine_2x2_1K_albedo.tif
+map_Ns TexturesCom_Ground_TreeRootsPine_2x2_1K_roughness.tif
