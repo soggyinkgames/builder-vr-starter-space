@@ -52,7 +52,7 @@ MonoBehaviour:
   m_UISuperCollapsed: 0
   m_UIInfos: {fileID: 114340500867371532}
   m_ParameterInfo:
-  - name: Left Hand
+  - name: LeftHand
     path: 
     tooltip: 
     sheetType: 
@@ -66,7 +66,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 3
   - name: position
-    path: Left Hand_position
+    path: LeftHand_position
     tooltip: Sets the transform position.
     sheetType: m_Vector3f
     realType: Vector3
@@ -80,7 +80,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   - name: angles
-    path: Left Hand_angles
+    path: LeftHand_angles
     tooltip: Sets the euler angles of the transform.
     sheetType: m_Vector3f
     realType: Vector3
@@ -94,7 +94,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   - name: scale
-    path: Left Hand_scale
+    path: LeftHand_scale
     tooltip: Sets the scale of the transform along each axis.
     sheetType: m_Vector3f
     realType: Vector3
@@ -107,7 +107,7 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: Right Hand
+  - name: RightHand
     path: 
     tooltip: 
     sheetType: 
@@ -121,7 +121,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 3
   - name: position
-    path: Right Hand_position
+    path: RightHand_position
     tooltip: Sets the transform position.
     sheetType: m_Vector3f
     realType: Vector3
@@ -135,7 +135,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   - name: angles
-    path: Right Hand_angles
+    path: RightHand_angles
     tooltip: Sets the euler angles of the transform.
     sheetType: m_Vector3f
     realType: Vector3
@@ -149,7 +149,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   - name: scale
-    path: Right Hand_scale
+    path: RightHand_scale
     tooltip: Sets the scale of the transform along each axis.
     sheetType: m_Vector3f
     realType: Vector3
@@ -5255,7 +5255,7 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661614835}
-  m_ExposedName: Left Hand
+  m_ExposedName: LeftHand
   m_Exposed: 1
   m_Order: 0
   m_Category: 
@@ -5744,7 +5744,7 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661614849}
-  m_ExposedName: Right Hand
+  m_ExposedName: RightHand
   m_Exposed: 1
   m_Order: 1
   m_Category: 
