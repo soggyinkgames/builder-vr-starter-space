@@ -13,9 +13,9 @@ scopes = {
 	"last_search.8C24D059" = "grid"
 	"OpenInspectorPreview.8C24D059" = "0"
 	"currentGroup.8C24D059" = "all"
-	"last_search.E4EB812F" = "snow"
+	"last_search.E4EB812F" = "parti"
 	"OpenInspectorPreview.E4EB812F" = "0"
-	"currentGroup.E4EB812F" = "all"
+	"currentGroup.E4EB812F" = "_group_provider_Texture 2D"
 }
 providers = {
 	adb = {
