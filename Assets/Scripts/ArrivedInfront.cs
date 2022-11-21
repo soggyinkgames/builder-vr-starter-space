@@ -3,17 +3,21 @@ using UnityEngine;
 
 public class ArrivedInfront : MonoBehaviour
 {
-    void OnTriggerEnter (Collider other)
+
+    public Material WaterDissolve;
+
+
+    void OnTriggerEnter (Collider Player)
     {
-        Debug. Log ("Object Entered the trigger");
+        WaterDissolve.SetFloat("_Dissolve", 0);
     }
-    void OnTriggerStay (Collider other)
+    void OnTriggerStay (Collider Player)
     {
-        Debug. Log ("Object is within trigger");
+        Debug.Log ("Object is within trigger");
     }
-    void OnTriggerExit (Collider other)
+    void OnTriggerExit (Collider Player)
     {
-        Debug. Log ("Object Exited the trigger");
+        WaterDissolve.SetFloat("_Dissolve", 1);
     }
 }
 
