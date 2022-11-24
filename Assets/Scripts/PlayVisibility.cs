@@ -31,7 +31,7 @@ public class PlayVisibility : MonoBehaviour
     {
         if(Player)
         {
-            dissolves.SetBool("appearing", false);
+            dissolves.SetBool("appearing", true);
         }
     }
 }
