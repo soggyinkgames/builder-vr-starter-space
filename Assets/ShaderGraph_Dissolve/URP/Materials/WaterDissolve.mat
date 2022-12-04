@@ -51,11 +51,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolve: 0
+    - _Dissolve: 1
     - _EdgeColorIntensity: 1
     - _EdgeWidth: 0.05
     - _Metallic: 0.06
-    - _NoiseScale: 60
+    - _NoiseScale: 63.64
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _QueueControl: 0
