@@ -1,10 +1,13 @@
 {
     "name": "Facebook.Wit.TTS",
+    "rootNamespace": "",
     "references": [
         "GUID:4504b1a6e0fdcc3498c30b266e4a63bf"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [],
+    "excludePlatforms": [
+        "WebGL"
+    ],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],

@@ -1,10 +1,13 @@
 {
     "name": "Oculus.AudioManager",
+    "rootNamespace": "",
     "references": [
         "Oculus.Spatializer"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [],
+    "excludePlatforms": [
+        "WebGL"
+    ],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],

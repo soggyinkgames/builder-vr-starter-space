@@ -1,12 +1,15 @@
 {
     "name": "Oculus.VR",
+    "rootNamespace": "",
     "references": [
         "Unity.RenderPipelines.Universal.Runtime",
         "Unity.XR.OpenXR"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "excludePlatforms": [
+        "WebGL"
+    ],
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,

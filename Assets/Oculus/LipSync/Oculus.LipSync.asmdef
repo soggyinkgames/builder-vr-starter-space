@@ -1,8 +1,11 @@
 {
     "name": "Oculus.LipSync",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
-    "excludePlatforms": [],
+    "excludePlatforms": [
+        "WebGL"
+    ],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
