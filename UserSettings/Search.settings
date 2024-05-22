@@ -10,10 +10,10 @@ scopes = {
 	"last_search.785D90A9" = "anti-"
 	"OpenInspectorPreview.785D90A9" = "0"
 	"currentGroup.785D90A9" = "all"
-	"last_search.8C24D059" = "grid"
+	"last_search.8C24D059" = "skybox"
 	"OpenInspectorPreview.8C24D059" = "0"
-	"currentGroup.8C24D059" = "all"
-	"last_search.E4EB812F" = "default"
+	"currentGroup.8C24D059" = "menu"
+	"last_search.E4EB812F" = ""
 	"OpenInspectorPreview.E4EB812F" = "0"
 	"currentGroup.E4EB812F" = "all"
 	"last_search.BDE7F5D3" = ""
@@ -73,10 +73,11 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"s"
+	"occ"
 	"g"
 	"grid snapping"
 	"a"
-	"s"
 ]
 searchItemFavorites = [
 ]
