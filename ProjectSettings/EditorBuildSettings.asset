@@ -5,10 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/soggyWater.unity
+    guid: 6527854472fe8ca4ba927b87697d3f45
+  - enabled: 0
+    path: Assets/Scenes/soggyMansion.unity
+    guid: 9daa088f84c42a0418ba122860c8bcf2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 95b3b1fb99dfb8046bb5dae27b1249f5, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: c307e6a9f7d84ba46b10b1ee1ada872a, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: ff3c4a25b4b516f4cac313dcba7bb08d, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0819737fc1060554c828bc2585761149, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: dc5355e451a298642be1e164b65f57db, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: d0bfc34162e080143b27cb3bc11d50f0, type: 2}
